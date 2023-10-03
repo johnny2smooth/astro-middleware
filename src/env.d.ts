@@ -4,5 +4,6 @@ declare namespace App {
     user: string;
     welcomeTitle: () => string;
     orders: Map<string, object>;
+    authorized: () => boolean;
   }
 }

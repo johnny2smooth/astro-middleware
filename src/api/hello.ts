@@ -1,7 +1,6 @@
 import type { CreateContext } from "astro/middleware";
 
 export const GET = (context: CreateContext) => {
-  console.log(context.request.mode);
   return new Response(
     JSON.stringify({
       message: "This was a GET!",
